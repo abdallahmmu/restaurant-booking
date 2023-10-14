@@ -4,15 +4,15 @@
   "description": "restaurant system for booking",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon dist/src/app.js",
-    "watch":"tsc --watch",
-    "build":"tsc"
+    "dev": "nodemon src/app.ts",
+    "build": "tsc"
   },
   "author": "abdallahmmu",
   "license": "ISC",
   "dependencies": {
     "@types/express": "^4.17.19",
     "@types/node": "^20.8.6",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "nodemon": "^3.0.1",
     "sequelize": "^6.33.0",
