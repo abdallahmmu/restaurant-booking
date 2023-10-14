@@ -1,7 +1,7 @@
 
 ##Compile Server
 server/dist
-server/.env
+server/src/.env
 
 ##nodemodules
 server/node_modules
