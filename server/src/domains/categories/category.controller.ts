@@ -56,11 +56,11 @@ export const editCategoryById = async (req:Request,res:Response,next:NextFunctio
     const {name,updatedName} = req.body
 
     if(!name || !updatedName){
-        return res.status(404).json({error:'ID is required and Must be Admin'})
+        return res.status(404).json({error:'Name is required and Must be Admin'})
     }
 
     try {
-       const updatedDone = categoryModel.update({name:updatedName},{
+       const updatedDone = await categoryModel.update({name:updatedName},{
             where:{
                 name:name
             }
